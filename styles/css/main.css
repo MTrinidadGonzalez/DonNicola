@@ -1,0 +1,644 @@
+/* Colores*/
+/*Break points*/
+/* Colores*/
+/*Break points*/
+@keyframes cambioborede {
+  0% {
+    border-top: 3px solid #776d1e; }
+  25% {
+    border-right: 3px solid #776d1e; }
+  50% {
+    border-bottom: 3px solid #776d1e; }
+  100% {
+    border-left: 3px solid #776d1e; } }
+
+@keyframes imgInicioMobil {
+  0% {
+    background-image: url(./../../assets/imagenes/sorrentinorosaMano.jpg); }
+  10% {
+    background-image: url(./../../assets/imagenes/canelones2.jpg); }
+  25% {
+    background-image: url(./../../assets/imagenes/nicoInicio5.jpg); }
+  50% {
+    background-image: url(./../../assets/imagenes/casuelasDulces.jpg); }
+  75% {
+    background-image: url(./../../assets/imagenes/nicoInicio6.jpg); }
+  100% {
+    background-image: url(./../../assets/imagenes/casuelas.jpg); } }
+
+/*encabezado*/
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0px; }
+
+html, body {
+  scroll-behavior: smooth; }
+  html h1, body h1 {
+    font-family: 'La Belle Aurore', cursive; }
+
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 30px; }
+  .encabezado .imgLogo {
+    width: 65px;
+    border-radius: 50%;
+    border: 1px solid #fb6259;
+    margin: 5px 20px 5px 5px; }
+
+/*inicio*/
+.mainInicio {
+  background-image: linear-gradient(#708a7a, #56c7fc, #708a7a);
+  width: 100%;
+  padding: 10px 10px 10px 55px;
+  justify-content: center; }
+  .mainInicio .imgGaleria {
+    width: 190px;
+    height: 190px;
+    margin: 15px 25px 15px 25px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px 5px;
+    transition: all 350ms;
+    position: relative; }
+    .mainInicio .imgGaleria:hover {
+      width: 240px;
+      height: 240px;
+      margin: 0px;
+      border-radius: 0px;
+      box-shadow: 0px 0px 0px 0px; }
+
+/*quienes somos*/
+.quienesSomos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border: 3px solid #fb6259;
+  margin: 30px 0px 30px 0px;
+  animation-name: cambioborede;
+  animation-iteration-count: infinite;
+  transition: all 450ms;
+  animation-duration: 7s; }
+  .quienesSomos p {
+    text-align: justify; }
+
+.asideInicio {
+  background-image: linear-gradient(#fb6259, #776d1e); }
+  .asideInicio h2 {
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .asideInicio .serviciosInicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 480px; }
+  .asideInicio hr {
+    color: #fb6259;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 10px;
+    background-image: linear-gradient(#c3e1e7, white);
+    box-shadow: 2px 2px 2px 2px #382e2e; }
+  .asideInicio .cardInicio {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 2px 2px 2px 2px #382e2e; }
+    .asideInicio .cardInicio img {
+      height: 200px;
+      width: 100%;
+      border: 1px solid black; }
+    .asideInicio .cardInicio a {
+      background-color: white;
+      border: 1px solid #fb6259;
+      color: #fb6259; }
+      .asideInicio .cardInicio a:hover {
+        background-color: #c3e1e7;
+        border: 1px solid #776d1e;
+        color: #776d1e; }
+
+/*Footer*/
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px; }
+  footer .contactoFooter {
+    text-align: center;
+    background-color: #708a7a;
+    padding: 5px;
+    border-radius: 6px; }
+    footer .contactoFooter .iconos {
+      background-color: #fb6259;
+      width: 25px;
+      height: 25px;
+      padding: 5px;
+      text-align: center;
+      border-radius: 6px; }
+      footer .contactoFooter .iconos:hover {
+        background-color: #776d1e;
+        box-shadow: 2px 2px 2px 2px #382e2e; }
+
+/*Pagina de servicios*/
+.cuerpoServicios h2 {
+  text-align: center;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#catering {
+  background-image: linear-gradient(#708a7a, #c3e1e7, #708a7a);
+  padding: 20px; }
+  #catering h2 {
+    padding: 10px; }
+  #catering hr {
+    color: #c3e1e7;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 10px;
+    background-image: linear-gradient(#fb6259, white);
+    box-shadow: 2px 2px 2px 2px #382e2e; }
+  #catering .galeriaCatering {
+    background-color: black;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    #catering .galeriaCatering .imgGaleria {
+      width: 190px;
+      height: 190px;
+      margin: 25px 35px;
+      border-radius: 6px;
+      box-shadow: 5px 5px 5px 5px;
+      transition: all 350ms;
+      position: relative; }
+      #catering .galeriaCatering .imgGaleria:hover {
+        width: 240px;
+        height: 240px;
+        margin: 0px;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px; }
+
+#productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid black;*/
+  /*background-color: $rosa;*/
+  background-image: linear-gradient(#fb6259, #ffe6a7);
+  width: 100%;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  #productos h2 {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 6px; }
+
+/*contacto*/
+.formContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 10px; }
+  .formContacto input, .formContacto textarea, .formContacto button {
+    width: 240px;
+    margin: 7px;
+    padding: 5px; }
+  .formContacto h3 {
+    color: white;
+    text-align: center; }
+
+/* Colores*/
+/*Break points*/
+/* Colores*/
+/*Break points*/
+@keyframes cambioborede {
+  0% {
+    border-top: 3px solid #776d1e; }
+  25% {
+    border-right: 3px solid #776d1e; }
+  50% {
+    border-bottom: 3px solid #776d1e; }
+  100% {
+    border-left: 3px solid #776d1e; } }
+
+@keyframes imgInicioMobil {
+  0% {
+    background-image: url(./../../assets/imagenes/sorrentinorosaMano.jpg); }
+  10% {
+    background-image: url(./../../assets/imagenes/canelones2.jpg); }
+  25% {
+    background-image: url(./../../assets/imagenes/nicoInicio5.jpg); }
+  50% {
+    background-image: url(./../../assets/imagenes/casuelasDulces.jpg); }
+  75% {
+    background-image: url(./../../assets/imagenes/nicoInicio6.jpg); }
+  100% {
+    background-image: url(./../../assets/imagenes/casuelas.jpg); } }
+
+/*encabezado*/
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0px; }
+
+html, body {
+  scroll-behavior: smooth; }
+  html h1, body h1 {
+    font-family: 'La Belle Aurore', cursive; }
+
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 30px; }
+  .encabezado .imgLogo {
+    width: 65px;
+    border-radius: 50%;
+    border: 1px solid #fb6259;
+    margin: 5px 20px 5px 5px; }
+
+/*inicio*/
+.mainInicio {
+  background-image: linear-gradient(#708a7a, #56c7fc, #708a7a);
+  width: 100%;
+  padding: 10px 10px 10px 55px;
+  justify-content: center; }
+  .mainInicio .imgGaleria {
+    width: 190px;
+    height: 190px;
+    margin: 15px 25px 15px 25px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px 5px;
+    transition: all 350ms;
+    position: relative; }
+    .mainInicio .imgGaleria:hover {
+      width: 240px;
+      height: 240px;
+      margin: 0px;
+      border-radius: 0px;
+      box-shadow: 0px 0px 0px 0px; }
+
+/*quienes somos*/
+.quienesSomos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border: 3px solid #fb6259;
+  margin: 30px 0px 30px 0px;
+  animation-name: cambioborede;
+  animation-iteration-count: infinite;
+  transition: all 450ms;
+  animation-duration: 7s; }
+  .quienesSomos p {
+    text-align: justify; }
+
+.asideInicio {
+  background-image: linear-gradient(#fb6259, #776d1e); }
+  .asideInicio h2 {
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .asideInicio .serviciosInicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 480px; }
+  .asideInicio hr {
+    color: #fb6259;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 10px;
+    background-image: linear-gradient(#c3e1e7, white);
+    box-shadow: 2px 2px 2px 2px #382e2e; }
+  .asideInicio .cardInicio {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 2px 2px 2px 2px #382e2e; }
+    .asideInicio .cardInicio img {
+      height: 200px;
+      width: 100%;
+      border: 1px solid black; }
+    .asideInicio .cardInicio a {
+      background-color: white;
+      border: 1px solid #fb6259;
+      color: #fb6259; }
+      .asideInicio .cardInicio a:hover {
+        background-color: #c3e1e7;
+        border: 1px solid #776d1e;
+        color: #776d1e; }
+
+/*Footer*/
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px; }
+  footer .contactoFooter {
+    text-align: center;
+    background-color: #708a7a;
+    padding: 5px;
+    border-radius: 6px; }
+    footer .contactoFooter .iconos {
+      background-color: #fb6259;
+      width: 25px;
+      height: 25px;
+      padding: 5px;
+      text-align: center;
+      border-radius: 6px; }
+      footer .contactoFooter .iconos:hover {
+        background-color: #776d1e;
+        box-shadow: 2px 2px 2px 2px #382e2e; }
+
+/*Pagina de servicios*/
+.cuerpoServicios h2 {
+  text-align: center;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#catering {
+  background-image: linear-gradient(#708a7a, #c3e1e7, #708a7a);
+  padding: 20px; }
+  #catering h2 {
+    padding: 10px; }
+  #catering hr {
+    color: #c3e1e7;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 10px;
+    background-image: linear-gradient(#fb6259, white);
+    box-shadow: 2px 2px 2px 2px #382e2e; }
+  #catering .galeriaCatering {
+    background-color: black;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    #catering .galeriaCatering .imgGaleria {
+      width: 190px;
+      height: 190px;
+      margin: 25px 35px;
+      border-radius: 6px;
+      box-shadow: 5px 5px 5px 5px;
+      transition: all 350ms;
+      position: relative; }
+      #catering .galeriaCatering .imgGaleria:hover {
+        width: 240px;
+        height: 240px;
+        margin: 0px;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px; }
+
+#productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid black;*/
+  /*background-color: $rosa;*/
+  background-image: linear-gradient(#fb6259, #ffe6a7);
+  width: 100%;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  #productos h2 {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 6px; }
+
+/*contacto*/
+.formContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 10px; }
+  .formContacto input, .formContacto textarea, .formContacto button {
+    width: 240px;
+    margin: 7px;
+    padding: 5px; }
+  .formContacto h3 {
+    color: white;
+    text-align: center; }
+
+@keyframes cambioborede {
+  0% {
+    border-top: 3px solid #776d1e; }
+  25% {
+    border-right: 3px solid #776d1e; }
+  50% {
+    border-bottom: 3px solid #776d1e; }
+  100% {
+    border-left: 3px solid #776d1e; } }
+
+@keyframes imgInicioMobil {
+  0% {
+    background-image: url(./../../assets/imagenes/sorrentinorosaMano.jpg); }
+  10% {
+    background-image: url(./../../assets/imagenes/canelones2.jpg); }
+  25% {
+    background-image: url(./../../assets/imagenes/nicoInicio5.jpg); }
+  50% {
+    background-image: url(./../../assets/imagenes/casuelasDulces.jpg); }
+  75% {
+    background-image: url(./../../assets/imagenes/nicoInicio6.jpg); }
+  100% {
+    background-image: url(./../../assets/imagenes/casuelas.jpg); } }
+
+@media screen and (max-width: 760px) {
+  .mainInicio {
+    display: none; }
+  .mainInicioMobil .imgInicioMobil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    animation-name: imgInicioMobil;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px 3px #545050; }
+  .asideInicio {
+    background-image: linear-gradient(#fb6259, #776d1e);
+    padding: 15px; }
+    .asideInicio h2 {
+      text-align: center;
+      background-color: white;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .asideInicio .serviciosInicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 550px; }
+    .asideInicio hr {
+      color: #fb6259;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      text-align: center;
+      height: 10px;
+      background-image: linear-gradient(#c3e1e7, white);
+      box-shadow: 2px 2px 2px 2px #382e2e; }
+    .asideInicio .cardInicio {
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+      box-shadow: 2px 2px 2px 2px #382e2e;
+      margin-top: 20px; }
+      .asideInicio .cardInicio img {
+        height: 190px;
+        width: 100%;
+        border: 1px solid black; }
+      .asideInicio .cardInicio a {
+        background-color: white;
+        border: 1px solid #fb6259;
+        color: #fb6259; }
+        .asideInicio .cardInicio a:hover {
+          background-color: #c3e1e7;
+          border: 1px solid #776d1e;
+          color: #776d1e; }
+  footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px; }
+    footer .contactoFooter {
+      text-align: center;
+      background-color: #708a7a;
+      padding: 3px;
+      border-radius: 6px;
+      margin: 4px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      footer .contactoFooter:hover {
+        background-color: #776d1e;
+        box-shadow: 2px 2px 2px 2px #382e2e; }
+      footer .contactoFooter .iconos {
+        background-color: #fb6259;
+        width: 25px;
+        height: 25px;
+        padding: 3px;
+        text-align: center;
+        border-radius: 6px;
+        margin-left: 3px; }
+  #catering {
+    background-image: linear-gradient(#708a7a, #c3e1e7, #708a7a);
+    padding: 20px; }
+    #catering h2 {
+      padding: 10px; }
+    #catering hr {
+      color: #c3e1e7;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      text-align: center;
+      height: 10px;
+      background-image: linear-gradient(#fb6259, white);
+      box-shadow: 2px 2px 2px 2px #382e2e; }
+    #catering .galeriaCatering {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      #catering .galeriaCatering .imgGaleria {
+        width: 190px;
+        height: 190px;
+        margin: 25px 35px;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px 5px;
+        transition: all 350ms;
+        position: relative; }
+        #catering .galeriaCatering .imgGaleria:hover {
+          width: 240px;
+          height: 240px;
+          margin: 0px;
+          border-radius: 0px;
+          box-shadow: 0px 0px 0px 0px; }
+  #productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black;*/
+    /*background-color: $rosa;*/
+    background-image: linear-gradient(#fb6259, #ffe6a7);
+    width: 100%;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    #productos h2 {
+      padding: 5px;
+      border: 1px solid black;
+      border-radius: 6px; } }
+
+@keyframes cambioborede {
+  0% {
+    border-top: 3px solid #776d1e; }
+  25% {
+    border-right: 3px solid #776d1e; }
+  50% {
+    border-bottom: 3px solid #776d1e; }
+  100% {
+    border-left: 3px solid #776d1e; } }
+
+@keyframes imgInicioMobil {
+  0% {
+    background-image: url(./../../assets/imagenes/sorrentinorosaMano.jpg); }
+  10% {
+    background-image: url(./../../assets/imagenes/canelones2.jpg); }
+  25% {
+    background-image: url(./../../assets/imagenes/nicoInicio5.jpg); }
+  50% {
+    background-image: url(./../../assets/imagenes/casuelasDulces.jpg); }
+  75% {
+    background-image: url(./../../assets/imagenes/nicoInicio6.jpg); }
+  100% {
+    background-image: url(./../../assets/imagenes/casuelas.jpg); } }

@@ -1,0 +1,25 @@
+{
+  "name": "donnicola",
+  "version": "1.0.0",
+  "description": "proyecto gastronomia don nicola",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass":"node-sass --include-path scss styles/sass/origen.scss styles/css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+  },
+  "keywords": [
+    "gastronomia",
+    "don",
+    "nicola",
+    "comida",
+    "manu",
+    "servicios"
+  ],
+  "author": "maria trinidad gonzalez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,161 @@
+@import "variables";
+@import "mixins";
+@import "estilosgenerales";
+@import "animaciones.scss";
+
+@media screen and (max-width: map-get($breakpoints,$key:"tablet")){
+  
+    .mainInicio{
+        display: none;
+    }
+
+    .mainInicioMobil{
+        .imgInicioMobil{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            animation-name: imgInicioMobil;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            background-size: cover;
+            border-radius: 6px;
+            box-shadow: 3px 3px 3px 3px rgb(84, 80, 80);
+        }
+    }
+
+    .asideInicio{
+        background-image:linear-gradient($rosa,$verde) ;
+        padding: 15px;
+          h2{
+              text-align: center;
+              background-color: white;
+              margin-top: 10px;
+              margin-bottom: 10px;
+             
+          }
+         .serviciosInicio{
+          @include flex-vertical;
+         min-height: 550px;
+      }
+          hr{
+              color: $rosa;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              text-align: center;
+              height: 10px;
+              background-image: linear-gradient($celeste, white) ;
+              box-shadow: 2px 2px 2px 2px rgb(56, 46, 46);
+          }
+          .cardInicio{
+              background-color: black;
+              border: 1px solid white;
+              color: white;
+              box-shadow: 2px 2px 2px 2px rgb(56, 46, 46);
+              margin-top: 20px;
+              img{
+                  height: 190px;
+                  width: 100%;
+                  border: 1px solid black;
+              }
+              a{
+                  background-color: white;
+                  border: 1px solid $rosa;
+                  color: $rosa;
+      
+                  &:hover{
+                      background-color: $celeste;
+                      border: 1px solid $verde;
+                      color: $verde;
+                  }
+              }
+          }
+      }
+      footer{
+        background-color: black;
+        color: white;
+        @include flex-vertical;
+        padding: 10px;
+        margin-top: 20px;
+        .contactoFooter{
+            text-align: center;
+            background-color: $grisCelestoso;
+            padding: 3px;
+            border-radius: 6px;
+            margin: 4px;
+            @include flex-orizontal;
+            &:hover{
+                background-color: $verde;
+                box-shadow: 2px 2px 2px 2px rgb(56, 46, 46);
+            }
+            .iconos{
+                background-color: $rosa;
+                width: 25px;
+                height: 25px;
+                padding: 3px;
+                text-align: center;
+                border-radius: 6px;
+                margin-left: 3px;
+               
+            }
+        }
+    }
+
+    #catering{
+        background-image: linear-gradient($grisCelestoso, $celeste, $grisCelestoso) ;
+        padding: 20px;
+        h2{
+            padding: 10px;
+        }
+        hr{
+            color: $celeste;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            height: 10px;
+            background-image: linear-gradient($rosa, white) ;
+            box-shadow: 2px 2px 2px 2px rgb(56, 46, 46);
+        }
+        .galeriaCatering{
+            @include flex-vertical;
+            background-color: black;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            .imgGaleria{
+                width: 190px;
+                height: 190px;
+                margin: 25px 35px;
+                border-radius: 6px;
+                box-shadow: 5px 5px 5px 5px;
+                transition: all 350ms;
+                position: relative;
+               
+                &:hover{
+                    width: 240px;
+                    height: 240px;
+                    margin: 0px;
+                    border-radius: 0px;
+                    box-shadow: 0px 0px 0px 0px;
+                }
+            }
+        }
+        
+    }
+    #productos{
+        @include flex-vertical;
+       /* border: 1px solid black;*/
+        /*background-color: $rosa;*/
+        background-image: linear-gradient($rosa, rgb(255, 230, 167));
+        width: 100%;
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        h2{
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+    }
+    
+}
